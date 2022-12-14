@@ -23,7 +23,7 @@ from get_json import get_mysql_data
 from get_json import storge_json
 from check_all_status import get_status
 import ssl
-from shane_db import DB
+from DB.jableDB import DB
 import logging
 import datetime
 
