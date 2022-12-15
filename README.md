@@ -1,62 +1,22 @@
-# JableTVDownload
+# 基本介紹
+抓取  影片網站(jable)<br>
+輕鬆爬取影片, 不用在關鍵時刻忍受lag的煩惱  
 
-## 下載JableTV好幫手
+# 參考來源  
+https://github.com/hcjohn463/JableTVDownload
 
-每次看正要爽的時候就給我卡住轉圈圈  
+# 資料庫結構設計  
+* 抓取影片相關資訊
+table_name = jableTV   
 
-直接下載到電腦看沒煩惱
+![image](https://github.com/johnny7001/crawler-comic-yomh/blob/ca954ec03d815b1a0422872b0b7e8b5adfa8a06c/yomh.jpg)
 
-### vitual env
-```
-python3 -m venv jable
-source jable/bin/activate. # MacOS
-```
+# 腳本說明  
 
-### requirements
-`pip install -r requirements.txt`
+注意: 這個code運行必須先啟動 jableAPI (https://github.com/johnny7001/jable_API/tree/master)  
 
-安裝 [FFmpeg] (未安裝也能下載 但影片拖拉時間軸會有卡幀情況發生)
-
-### 執行程式(Execute)
-`python main.py`
-
-### 輸入影片網址(Input video url)
-`https://jable.tv/videos/ipx-486/`    
-![image](https://github.com/hcjohn463/JableDownload/blob/main/img/input.PNG)  
-
-### 等待下載(Wait download)  
-![image](https://github.com/hcjohn463/JableDownload/blob/main/img/download.PNG)
-
-### 完成(Finish)
-![image](https://github.com/hcjohn463/JableDownload/blob/main/img/3.PNG)
-
-如果覺得好用 再麻煩給個星星好評 謝謝!!
-
-## #####選擇性使用(Optional use)#####
-
-### 使用FFmpeg轉檔優化 : 參數能自己調(Use FFmpeg encode) 
-`cd ipx-486`  
-`ffmpeg -i ipx-486.mp4 -c:v libx264 -b:v 3M -threads 5 -preset superfast f_ipx-486.mp4`  
-  
-![image](https://github.com/hcjohn463/JableDownload/blob/main/img/ff.PNG)
-
-### 轉檔完成(Finish encode)
-![image](https://github.com/hcjohn463/JableDownload/blob/main/img/different.PNG)
-
-[FFmpeg]:<https://www.ffmpeg.org/>  
-
-### Argument parser
-`$python main.py -h`
-
-![](https://i.imgur.com/qgyS5sf.png)
-
-`$python main.py --random True`
-
-可以直接下載隨機熱門影片
-
-![](https://i.imgur.com/dSsdB7Y.png)
-
-可以直接在cmd line指定url。
-
-![](https://i.imgur.com/DKFrD7T.png)
-
+check_all_status.py 確認影片下載狀態<br>
+download_8s.py 下載預覽8秒短片<br>
+get_json.py 將資料統整後載成json文件檔<br>
+get_url_data.py 下載影片鏈結及相關資訊<br>
+main.py 根據影片狀態(status)及下載清單(url_list)下載影片<br>
