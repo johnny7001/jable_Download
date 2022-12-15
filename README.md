@@ -9,7 +9,7 @@ https://github.com/hcjohn463/JableTVDownload
 * 抓取影片相關資訊
 table_name = jableTV   
 
-![image](https://github.com/johnny7001/crawler-comic-yomh/blob/ca954ec03d815b1a0422872b0b7e8b5adfa8a06c/yomh.jpg)
+![image](https://github.com/johnny7001/jable_Download/blob/90a41f9d8d8a34802769b0c964d5c7105498d51b/jable.jpg)
 
 # 腳本說明  
 
