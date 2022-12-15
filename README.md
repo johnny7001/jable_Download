@@ -2,9 +2,6 @@
 抓取  影片網站(jable)<br>
 輕鬆爬取影片, 不用在關鍵時刻忍受lag的煩惱  
 
-# 參考來源  
-https://github.com/hcjohn463/JableTVDownload
-
 # 資料庫結構設計  
 * 抓取影片相關資訊
 table_name = jableTV   
@@ -20,3 +17,7 @@ download_8s.py 下載預覽8秒短片<br>
 get_json.py 將資料統整後載成json文件檔<br>
 get_url_data.py 下載影片鏈結及相關資訊<br>
 main.py 根據影片狀態(status)及下載清單(url_list)下載影片<br>
+
+
+# 參考來源  
+https://github.com/hcjohn463/JableTVDownload
