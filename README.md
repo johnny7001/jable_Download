@@ -1,7 +1,8 @@
 # 基本介紹
 抓取  影片網站(jable)<br>
 輕鬆爬取影片, 不用在關鍵時刻忍受lag的煩惱  
-
+另外抓到m3u8或mp4的url也可使用download_m3u8.py, download_mp4.py下載影片  
+(成功爬取69VJ, XNXX網站影片)
 # 資料庫結構設計  
 * 抓取影片相關資訊
 table_name = jableTV   
